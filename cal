@@ -1,0 +1,22 @@
+num1=int(input("enter the first number"))
+num2=int(input("enter the second number"))
+user_choice=input("enter your choice = +,-,*,/,//,%,**")
+if user_choice=="+":
+    print(num1+num2)
+elif user_choice=="-":
+    print(num1-num2)
+elif user_choice=="*":
+    print(num1*num2)
+elif user_choice=="/":
+    if num2 == 0:
+        print("error: no division by zero")
+    else: 
+        print(num1/num2) 
+elif user_choice=="//":
+    print(num1//num2)
+elif user_choice=="%":
+    print(num1%num2)
+elif user_choice=="**":
+    print(num1**num2)
+else:
+    print("error: invalid sign")
